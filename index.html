@@ -68,6 +68,9 @@
               </div>
             </div>
           </nav>
+          <a href="#" class="up bg-linear h-btn" id="up">
+            <span><i class="fa-solid fa-arrow-up"></i></span>
+          </a>
           <div class="landing pt-5 pb-5 text-white">
             <div class="container pt-5">
               <div class="row">
@@ -769,10 +772,14 @@
     <script src="Js/bootstrap.bundle.min.js"></script>
     <script>
       let nav = document.querySelector("nav");
+      let upTop = document.querySelector(".up");
       window.onscroll = function () {
         this.scrollY >= 50
           ? nav.classList.add("scrolled", "shadow-sm")
           : nav.classList.remove("scrolled", "shadow-sm");
+        this.scrollY >= 1000
+          ? upTop.classList.add("show")
+          : upTop.classList.remove("show");
       };
     </script>
   </body>

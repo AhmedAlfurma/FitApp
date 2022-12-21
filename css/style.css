@@ -75,6 +75,21 @@ ul {
 a {
   text-decoration: none;
 }
+#up {
+  position: fixed;
+  bottom: 2rem;
+  right: -5rem;
+  z-index: 999;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  transition: 0.3s ease-in-out;
+}
+#up.show {
+  right: 2rem;
+}
 .bg-linear {
   background: linear-gradient(
     to bottom right,
